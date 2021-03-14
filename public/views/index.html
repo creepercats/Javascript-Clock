@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Clock</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="body">
+        <div class="days" id="days">
+            <h1 class="selected">Sunday</h1>
+            <h1>Monday</h1>
+            <h1>Tuesday</h1>
+            <h1>Wednesday</h1>
+            <h1>Thursday</h1>
+            <h1>Friday</h1>
+            <h1>Saturday</h1>
+        </div>
+
+        <div class="time">
+            <h1 class="selected time" id="time">14:05:23</h1>
+        </div>
+
+        <div class="hours-buttons">
+            <button id="twelve-hour" onclick="SetDisplayTime12Hours()">12 Hour</button>
+            <span></span>
+            <button class="selected" id="twenty-four-hour" onclick="SetDisplayTime24Hours()">24 Hour</button>
+        </div>
+
+    </div>
+
+
+    <script src="../js/time.js"></script>
+</body>
+</html>
