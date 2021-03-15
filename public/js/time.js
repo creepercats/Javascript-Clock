@@ -54,7 +54,7 @@ function SetCurrentTime24Hour(){
 
 function SetCurrentTime12Hour(){
     let hours = date.getHours();
-    let minutes = addZero(date.getMinutes());
+    let minutes = date.getMinutes();
     let seconds = addZero(date.getSeconds());
     let ampm = hours >= 12 ? 'PM' : 'AM';
 
