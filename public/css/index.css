@@ -1,12 +1,7 @@
-*{
+html, body{
     padding: 0;
     margin: 0;
     font-family: 'Agency FB', 'Regular';
-}
-
-h1{
-    padding-right: 25px;
-    color: #8A8A8A;
 }
 
 button{
@@ -34,6 +29,14 @@ span{
 
 .days{
     display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.day{
+    padding-right: 25px;
+    color: #8A8A8A;
+    margin: 0px;
 }
 
 .selected{
@@ -41,5 +44,25 @@ span{
 }
 
 .time{
-    font-size: 200px;
+    font-size: 3em;
+}
+
+@media (max-width: 415px){
+    .days > h1:not(.selected){
+        display: none;
+    }
+
+    .time{
+        font-size: 2em;
+    }
+
+    .hours-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .day{
+        padding-right: 0px;
+        margin: 0px;
+    }
 }
